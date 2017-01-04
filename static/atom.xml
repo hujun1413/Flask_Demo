@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>胡君的个人博客</title>
+  <subtitle>你必须非常努力才能看起来毫不费力</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://hujun1413.github.io/"/>
+  <updated>2017-01-04T05:07:36.062Z</updated>
+  <id>http://hujun1413.github.io/</id>
+  
+  <author>
+    <name>hujun1413</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实验一——音频采集与处理</title>
+    <link href="http://hujun1413.github.io/2017/01/04/%E5%AE%9E%E9%AA%8C%E4%B8%80/"/>
+    <id>http://hujun1413.github.io/2017/01/04/实验一/</id>
+    <published>2017-01-04T12:35:26.000Z</published>
+    <updated>2017-01-04T05:07:36.062Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;要求&quot;&gt;&lt;a href=&quot;#要求&quot; class=&quot;headerlink&quot; title=&quot;要求&quot;&gt;&lt;/a&gt;要求&lt;/h3&gt;&lt;p&gt;用Windows录音机录制一首自己唱的歌或朗诵，准备一段背景音乐，使用Cool Edit导入录制的声音文件和背景音乐，并进行合成。&lt;/p&gt;
+&lt;h3 id=&quot;提交内容&quot;&gt;&lt;a href=&quot;#提交内容&quot; class=&quot;headerlink&quot; title=&quot;提交内容&quot;&gt;&lt;/a&gt;提交内容&lt;/h3&gt;&lt;p&gt;背景音乐文件、声音文件、合成作品、实验报告（电子版+打印版）。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;要求&quot;&gt;&lt;a href=&quot;#要求&quot; class=&quot;headerlink&quot; title=&quot;要求&quot;&gt;&lt;/a&gt;要求&lt;/h3&gt;&lt;p&gt;用Windows录音机录制一首自己唱的歌或朗诵，准备一段背景音乐，使用Cool Edit导入录制的声音文件和背景音乐，并进行合成。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

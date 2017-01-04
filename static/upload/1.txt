@@ -1,0 +1,5 @@
+<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><p><form action="/upload/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" value="上传文件" />
+    </form></p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="/static/upload/1.txt" download="实验一">实验一.zip</a></p>
