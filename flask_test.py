@@ -1,5 +1,5 @@
-from flask import Flask, url_for, render_template, request,send_from_directory,abort,jsonify
-from werkzeug import secure_filename
+from flask import Flask, url_for, render_template, request
+#from werkzeug import secure_filename
 import os
 
 app = Flask(__name__)
@@ -9,20 +9,20 @@ UPLOAD_FOLDER = 'static/upload'
 def hello():
     return render_template('index.html')
 
-@app.route('/test1/')
-def test1():
-    return render_template('1.html')
+@app.route('/<page>/')
+def test(page):
+    return render_template(page+'.html')
 
 
 @app.route('/upload/', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
         f = request.files['file']
-        fname = secure_filename(f.filename)
+        #realname = secure_filename(f.filename)
         basedir = os.path.abspath(os.path.dirname(__file__))
         file_dir=os.path.join(basedir, UPLOAD_FOLDER)
-        f.save(os.path.join(file_dir, fname))
-        return 'success!'
+        f.save(os.path.join(file_dir, f.filename))
+        return 'Upload successfully!'
     return
 
 if __name__ == '__main__':

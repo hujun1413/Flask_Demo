@@ -2,7 +2,7 @@
 
 
 
-
+  
 
 
 <html class="theme-next mist use-motion">
@@ -27,7 +27,7 @@
 
 
 
-  <link href="/static/static/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  <link href="/static/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
 
@@ -59,7 +59,7 @@
 
 
 
-<link href="/static/static/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/static/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="/static/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
@@ -70,7 +70,7 @@
 
 
 
-  <link rel="alternate" href="/static/atom.xml" title="胡君的个人博客" type="application/atom+xml" />
+  <link rel="alternate" href="/static/atom.xml" title="胡君的个人页面" type="application/atom+xml" />
 
 
 
@@ -82,15 +82,15 @@
 
 
 
-<meta name="description" content="轻吟浅唱，我在岁月中踽踽独行">
+<meta name="description" content="A guy who want to know more about the world~班级：2013211309 学号：2013211413">
 <meta property="og:type" content="website">
-<meta property="og:title" content="胡君的个人博客">
+<meta property="og:title" content="胡君的个人页面">
 <meta property="og:url" content="http://hujun1413.github.io/index.html">
-<meta property="og:site_name" content="胡君的个人博客">
-<meta property="og:description" content="轻吟浅唱，我在岁月中踽踽独行">
+<meta property="og:site_name" content="胡君的个人页面">
+<meta property="og:description" content="A guy who want to know more about the world~班级：2013211309 学号：2013211413">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡君的个人博客">
-<meta name="twitter:description" content="轻吟浅唱，我在岁月中踽踽独行">
+<meta name="twitter:title" content="胡君的个人页面">
+<meta name="twitter:description" content="A guy who want to know more about the world~班级：2013211309 学号：2013211413">
 
 
 
@@ -109,7 +109,7 @@
 </script>
 
   <title>
-  hujun1413,stick to your dream - 胡君的个人博客
+  hujun1413,stick to your dream - 胡君的个人页面
 </title>
 </head>
 
@@ -141,9 +141,9 @@
 
 
   <div class="custom-logo-site-title">
-    <a href="/static/"  class="brand" rel="start">
+    <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">胡君的个人博客</span>
+      <span class="site-title">胡君的个人页面</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -166,41 +166,11 @@
 
 
         <li class="menu-item menu-item-home">
-          <a href="/static/" rel="section">
+          <a href="/" rel="section">
 
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
 
             首页
-          </a>
-        </li>
-
-
-        <li class="menu-item menu-item-categories">
-          <a href="/static/categories" rel="section">
-
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-
-            分类
-          </a>
-        </li>
-
-
-        <li class="menu-item menu-item-archives">
-          <a href="/static/archives" rel="section">
-
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-
-            归档
-          </a>
-        </li>
-
-
-        <li class="menu-item menu-item-tags">
-          <a href="/static/tags" rel="section">
-
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-
-            标签
           </a>
         </li>
 
@@ -243,8 +213,8 @@
 
 
 
-                <a class="post-title-link" href="{{ url_for('test1') }}" itemprop="url">
-                  实验一——音频采集与处理
+                <a class="post-title-link" href="{{ url_for('test', page='test4') }}" itemprop="url">
+                  实验四　网站制作
                 </a>
 
 
@@ -257,8 +227,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-04T20:35:26+08:00" content="2017-01-04">
-              2017-01-04
+            <time itemprop="dateCreated" datetime="2017-01-05T20:35:26+08:00" content="2017-01-05">
+              2017-01-05
             </time>
           </span>
 
@@ -268,8 +238,8 @@
 
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/static/2017/01/04/实验一/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/04/实验一/" itemprop="commentsCount"></span>
+                <a href="{{ url_for('test', page='test4') }}#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/05/实验四/" itemprop="commentsCount"></span>
                 </a>
               </span>
 
@@ -292,11 +262,319 @@
 
 
 
+          <h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><p>个人页面开发，包含个人基本信息，整个课程的各次实验信息，并实现媒体文件上传、下载功能实现。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="{{ url_for('test', page='test1') }}#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
 
-            <h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><p>用Windows录音机录制一首自己唱的歌或朗诵，准备一段背景音乐，使用Cool Edit导入录制的声音文件和背景音乐，并进行合成。</p>
-<h3 id="提交内容"><a href="#提交内容" class="headerlink" title="提交内容"></a>提交内容</h3><p>背景音乐文件、声音文件、合成作品、实验报告（电子版+打印版）。</p>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <footer class="post-footer">
 
 
+
+
+
+
+        <div class="post-eof"></div>
+
+    </footer>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+
+      <header class="post-header">
+
+
+
+          <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                <a class="post-title-link" href="{{ url_for('test', page='test3') }}" itemprop="url">
+                  实验三　动画制作
+                </a>
+
+
+          </h1>
+
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-01-02T20:35:26+08:00" content="2017-01-02">
+              2017-01-02
+            </time>
+          </span>
+
+
+
+
+
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="{{ url_for('test', page='test1') }}#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/02/实验三/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+          <h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><p>根据实验1中得到的歌曲或配乐朗诵，做一段Flash（不少于1分半钟），并合成为一段动画MV。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="{{ url_for('test', page='test1') }}#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <footer class="post-footer">
+
+
+
+
+
+
+        <div class="post-eof"></div>
+
+    </footer>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+
+      <header class="post-header">
+
+
+
+          <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                <a class="post-title-link" href="{{ url_for('test', page='test2') }}" itemprop="url">
+                  实验二　图像处理
+                </a>
+
+
+          </h1>
+
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-29T20:35:25+08:00" content="2016-12-29">
+              2016-12-29
+            </time>
+          </span>
+
+
+
+
+
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="{{ url_for('test', page='test2') }}#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/29/实验二/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+          <h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><ol>
+<li>选取适当的图片素材和世界地图，运用各种选取方法制作一幅由世界名胜照片揉和在一起的背景。利用图层效果制作一幅有地形质感的世界地图。调整并合并所有层存储为各种图像文件格式并压缩。
+          <div class="post-more-link text-center">
+            <a class="btn" href="{{ url_for('test', page='test2') }}#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <footer class="post-footer">
+
+
+
+
+
+
+        <div class="post-eof"></div>
+
+    </footer>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+
+      <header class="post-header">
+
+
+
+          <h1 class="post-title" itemprop="name headline">
+
+
+
+
+                <a class="post-title-link" href="{{ url_for('test', page='test1') }}" itemprop="url">
+                  实验一　音频采集与处理
+                </a>
+
+
+          </h1>
+
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-11T20:35:26+08:00" content="2016-12-11">
+              2016-12-11
+            </time>
+          </span>
+
+
+
+
+
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="{{ url_for('test', page='test1') }}#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/11/实验一/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+
+
+
+
+
+
+
+
+        </div>
+      </header>
+
+
+
+    <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+          <h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><p>用Windows录音机录制一首自己唱的歌或朗诵，准备一段背景音乐，使用Cool Edit导入录制的声音文件和背景音乐，并进行合成。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="{{ url_for('test', page='test1') }}#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
 
 
     </div>
@@ -357,14 +635,14 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://ofl6ycl3e.bkt.clouddn.com/avatar.png"
-               alt="hujun1413" />
-          <p class="site-author-name" itemprop="name">hujun1413</p>
-          <p class="site-description motion-element" itemprop="description">轻吟浅唱，我在岁月中踽踽独行</p>
+               alt="胡君" />
+          <p class="site-author-name" itemprop="name">胡君</p>
+          <p class="site-description motion-element" itemprop="description">A guy who want to <br />know more about the world~<br />班级：2013211309 <br />学号：2013211413</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/static/archives">
-              <span class="site-state-item-count">1</span>
+            <a href="/">
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -429,12 +707,12 @@
       <div class="footer-inner">
         <div class="copyright" >
 
-  &copy;  2016 -
+  &copy;
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">hujun1413</span>
+  <span class="author" itemprop="copyrightHolder">胡君</span>
 
    &nbsp;&nbsp;|&nbsp;&nbsp;
   <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258400302'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258400302' type='text/javascript'%3E%3C/script%3E"));</script>
@@ -503,33 +781,30 @@
 
 
 
-  <script type="text/javascript" src="static/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/static/lib/jquery/index.js?v=2.1.3"></script>
 
 
-  <script type="text/javascript" src="static/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/static/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
 
-  <script type="text/javascript" src="static/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/static/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
 
-  <script type="text/javascript" src="static/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/static/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
 
-  <script type="text/javascript" src="static/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/static/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
-  <script type="text/javascript" src="static/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-
-
-
-  <script type="text/javascript" src="static/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="static/js/src/motion.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/static/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
 
+
+
+  <script type="text/javascript" src="/static/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/static/js/src/motion.js?v=5.0.1"></script>
 
 
 
@@ -538,15 +813,18 @@
 
 
 
-  <script type="text/javascript" src="static/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
+  <script type="text/javascript" src="/static/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
+  
 
-
+  
+    
+  
 
   <script type="text/javascript">
     var duoshuoQuery = {short_name:"hujun1413"};
@@ -561,21 +839,21 @@
     })();
   </script>
 
+  
+    
+  
 
 
 
 
 
+  
+  
+  
 
+  
 
-
-
-
-
-
-
-
-
+  
 
 </body>
 </html>
